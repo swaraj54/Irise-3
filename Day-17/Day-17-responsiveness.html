@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiveness</title>
+    <style>
+        #parentDiv {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .childCss {
+            width: 23%;
+            height: 300px;
+            border: 2px solid black;
+        }
+
+        @media screen and (min-width : 10px) and (max-width : 470px) {
+            #parentDiv {
+                color: red;
+                font-size: 50px;
+                flex-wrap: wrap;
+            }
+
+            .childCss {
+                width: 45%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media screen and (min-width : 471px) and (max-width : 970px) {
+            #parentDiv {
+                color: blue;
+                font-size: 50px;
+                flex-wrap: wrap;
+            }
+
+            .childCss {
+                width: 31%;
+                margin-top: 20px;
+            }
+        }
+
+        @media screen and (min-width : 971px) and (max-width : 1440px) {
+            #parentDiv {
+                color: green;
+                font-size: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parentDiv">
+        <div class="childCss">1</div>
+        <div class="childCss">1</div>
+        <div class="childCss">1</div>
+        <div class="childCss">1</div>
+        <div class="childCss">1</div>
+        <div class="childCss">1</div>
+    </div>
+
+</body>
+
+</html>
