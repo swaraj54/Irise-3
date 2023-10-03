@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 18</title>
+    <style>
+        #parent {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            text-align: center;
+            font-size: 54px;
+        }
+
+        .child {
+            width: 23%;
+            height: 300px;
+            border: 2px solid black;
+        }
+
+        .grandChild {
+            border: 2px solid red;
+        }
+
+        #secGrandParent {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .secGrandChild {
+            width: 23%;
+            border: 2px solid blue;
+        }
+
+        #greatGrandParent {
+            display: flex;
+            font-size: 32px;
+            justify-content: space-between;
+        }
+
+        .greatGrandChildren {
+            width: 23%;
+            border: 3px solid green;
+        }
+
+
+        @media screen and (min-width :0px) and (max-width : 470px) {
+            #parent {
+                color: red;
+            }
+
+            .child {
+                width: 45%;
+            }
+
+            #grandparent {
+                display: flex;
+                font-size: 12px;
+            }
+
+            .grandChild {
+                width: 23%;
+            }
+
+            #secGrandParent {
+                flex-direction: column;
+            }
+
+            .secGrandChild {
+                width: 100%;
+            }
+            #greatGrandParent {
+                flex-direction: column;
+                font-size: 20px;
+            }
+            .greatGrandChildren {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div class="child">1</div>
+        <div id="secGrandParent" class="child">
+            <div class="secGrandChild">2.1</div>
+            <div class="secGrandChild">2.2</div>
+            <div class="secGrandChild">2.3</div>
+            <div class="secGrandChild">2.4</div>
+        </div>
+        <div id="grandparent" class="child">
+            <div id="greatGrandParent" class="grandChild">
+                <div class="greatGrandChildren">3.1.1</div>
+                <div class="greatGrandChildren">3.1.2</div>
+                <div class="greatGrandChildren">3.1.3</div>
+                <div class="greatGrandChildren">3.1.4</div>
+            </div>
+            <div class="grandChild">3.2</div>
+            <div class="grandChild">3.3</div>
+            <div class="grandChild">3.4</div>
+        </div>
+        <div class="child">4</div>
+    </div>
+
+</body>
+
+</html>

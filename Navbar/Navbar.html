@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent {
+            display: flex;
+            border: 2px solid red;
+            justify-content: space-between;
+        }
+
+        #parentOne {
+            display: flex;
+            width: 50%;
+            border: 2px solid green;
+            justify-content: space-between;
+        }
+
+        #parentTwo {
+            width: 20%;
+            border: 2px solid green;
+        }
+
+        .d-none {
+            display: none;
+        }
+
+        .d-block {
+            display: block;
+        }
+
+        @media screen and (min-width : 0px) and (max-width:470px) {
+            .d-none {
+                display: block;
+            }
+
+            .d-block {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="parentOne">
+            <div class="d-none">Bars</div>
+            <div>Logo</div>
+            <div class="d-block">Navigation</div>
+        </div>
+        <div id="parentTwo">
+            <div>login</div>
+        </div>
+    </div>
+</body>
+
+</html>
