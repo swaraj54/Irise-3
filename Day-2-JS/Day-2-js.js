@@ -22,7 +22,7 @@ console.log(divid)
 // }
 
 console.log(1 > 2)
-if(2 < 1){
+if(2 > 1){
     console.log("2 is greter than 1.")
 } else {
     console.log("1 is greter than 2")
