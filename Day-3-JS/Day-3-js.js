@@ -31,10 +31,23 @@
 // var myNumber
 // console.log(typeof(myNumber))
 
-Q.Given an a number find out is number even or odd,
- if number is even then check number2 is even or odd
-and if number is odd check number3 is even or odd
+// Q.Given an a number find out is number even or odd,
+//  if number is even then check number2 is even or odd
+// and if number is odd check number3 is even or odd
 
-var number = 23;
+var number = 22;
 var number2 = 78;
 var number3 = 67;
+if (number % 2 == 0) {
+    if (number2 % 2 == 0) {
+        console.log(`${number} and ${number2} are even numbers.`)
+    } else {
+        console.log(`${number} is even but ${number2} is odd.`)
+    }
+} else {
+    if (number3 % 2 == 0) {
+        console.log(`${number3} is even and ${number} is odd.`)
+    } else {
+        console.log(`${number3} and ${number} both are odd.`)
+    }
+}
