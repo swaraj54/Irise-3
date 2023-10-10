@@ -55,7 +55,7 @@ for (var i = 500; i <= 1000; i++) {
 
 
 
-for (var i = 10; i > 1; i--) {
+for (var i = 10 ; i > 1; i--) {
     console.log(i)
 }
 // 1st Iteration
@@ -76,7 +76,7 @@ for (var i = 1000; i >= 500; i--) {
 }
 
 
-// function 
+// function  - set of code
 
 function anyName() {
     console.log("hii")
