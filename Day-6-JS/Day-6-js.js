@@ -1,5 +1,5 @@
 
-// Q Find the numbers who odd and event.
+// Q Find the numbers who odd and even.
 var numbers = [23, 15, 81, 74, 57, 88, 53, 49, 36, 61]
 // console.log(numbers)
 
@@ -72,6 +72,7 @@ findSumAndEven(numbers)
 var array = [23, 3, 4, 8, 4, 2, 58, 9, 6, 4, 24, 6, 7, 65, 4, 5]
 var target = 8;
 
+var totalRun = 0;
 for (var i = 0; i < array.length - 1; i++) {
     // console.log(array[i], "i")
     for (var j = i + 1; j < array.length; j++) {
@@ -79,6 +80,13 @@ for (var i = 0; i < array.length - 1; i++) {
         if (array[i] + array[j] == target) {
             console.log(`${array[i]} + ${array[j]} = ${target}`)
         }
+        // totalRun++;
     }
+    // i++
 }
 
+// var name = 'irise'
+// console.log(`{name} here`)
+// console.log(`${name} here`)
+
+// console.log(totalRun,"totalRun")
