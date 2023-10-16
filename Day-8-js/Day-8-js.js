@@ -62,9 +62,16 @@ var myStudents = ["Rahul", "Rohit", "Virat"];
 // JSON.parse(myname); // convert json into js
 
 localStorage.setItem("StudentsList", JSON.stringify(myStudents)); // store
+
 var data = JSON.parse(localStorage.getItem("StudentsList")); // read , retrive
 console.log(data, "data from ls")
-// localStorage.removeItem("StudentsList"); // delete
+
+localStorage.removeItem("StudentsList"); // delete
+
+
+localStorage.setItem(name, value)
+localStorage.getItem(name)
+localStorage.removeItem(name)
 
 
 
